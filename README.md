@@ -21,6 +21,10 @@ description: Control the device status bar.
 #         under the License.
 -->
 
+# cordova-plugin-statusbar (Logics fork: iOS only)
+
+> **Logics fork `4.0.0-logics`:** identical to upstream 4.0.0 on iOS; the Android platform is removed entirely (no native code, no `window.StatusBar` on Android). Reason: cordova-android 15+ handles the status bar in its core, and the plugin's Android `initialize()` clobbers the core's system-UI flags so that on Android 5.0–8.1 the core's status-bar view covers the whole WebView — see [apache/cordova-android#1947](https://github.com/apache/cordova-android/issues/1947). Upstream README follows.
+
 # cordova-plugin-statusbar
 
 [![Android Testsuite](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/android.yml/badge.svg)](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/android.yml) [![Chrome Testsuite](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/chrome.yml/badge.svg)](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/chrome.yml) [![iOS Testsuite](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/ios.yml/badge.svg)](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/ios.yml) [![Lint Test](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/lint.yml/badge.svg)](https://github.com/apache/cordova-plugin-statusbar/actions/workflows/lint.yml)
